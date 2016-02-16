@@ -117,8 +117,7 @@ public class ListOfAnimalsActivity extends AppCompatActivity {
 
         //Set Image as scaled down Bitmap
         ImageView mImageView = (ImageView)animal.findViewById(R.id.image);
-        mImageView.setImageBitmap(
-                decodeSampledBitmapFromResource(getResources(), a.getImageId(), 100, 100));
+        mImageView.setImageBitmap(decodeSampledBitmapFromResource(getResources(), a.getImageId(), 100, 100));
 
         //Set title
         TextView title = (TextView)animal.findViewById(R.id.title);
