@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    style="@style/card">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:src="@drawable/seagull"
+        android:scaleType="centerCrop"
+        android:id="@+id/image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Fiskmås"
+        android:id="@+id/title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Fiskmås (Larus canus) är en fågel som tillhör familjen måsfåglar som häckar över stora delar av det norra halvklotet och merparten är flyttfåglar. (LC) ."
+        android:id="@+id/description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/buttons" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            android:shadowColor="@android:color/transparent"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:onClick="shareInformation"
+            android:id="@+id/shareButton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="exploreInformation"
+            android:id="@+id/exploreButton"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+    </LinearLayout>
+
+</LinearLayout>
